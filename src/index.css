@@ -1,13 +1,306 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --orange: #F15726;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: "Playfair Display", serif;
+  
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: 0.25rem 1rem;
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+button.primary {
+  background-color: var(--orange);
+  color: white;
+}
+
+.app {
+  margin: 0 auto;
+  max-width: 1800px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  font-weight: 900;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.logo {
+  font-size: 1.25em;
+  padding-left: 0.5rem;
+  color: transparent;
+
+  text-shadow: 0 0 0 var(--orange);
+}
+
+main {
+  padding: 0 1rem;
+}
+
+.new-book-form {
+  padding: 2rem 1rem;
+  margin: 2rem 0;
+}
+
+.new-book-form form {
+  display: block;
+  justify-content: center;
+}
+
+.new-book-form input {
+  margin-right: 2rem;
+  flex: 1;
+  
+}
+
+.new-book-form button {
+  width: 150px;
+  margin-top: 2rem;
+  padding: 8px;
+  background: #F25721;
+  color:white;
+  font-size: 18px;
+  border-radius: 15px;
+
+
+}
+
+.searchbar {
+  font-size:1.03em;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+label {
+  font-weight: bold;
+  display: block;
+}
+
+input {
+  padding: 0.25rem;
+  border: none;
+  font-family: inherit;
+  font-size: 1.2em;
+  border-bottom: 2px solid #4BB5C3;
+  transition: all 0.2s;
+  width: 100%;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 2px solid #03184a ;
+}
+
+.cards {
+  list-style: none;
+}
+
+.card {
+  margin: 1rem;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card button {
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: calc(33% - 2rem);
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    width: calc(25% - 2rem);
+  }
+}
+
+@media (min-width: 1200px) {
+  .card {
+    width: calc(20% - 2rem);
+  }
+}
+
+
+
+
+
+
+
+.navlinks{
+  display: flex;
+  flex: 1;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.navlinks a{
+  font-size: 24px;
+  text-decoration: none;
+  color:#4BB5C3;
+}
+
+/*#home{
+  height: 75vh;
+}*/
+
+
+
+.home{
+
+  color:#222733;
+  
+}
+
+.container{
+  width: 90%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.container img{
+  margin-right: -20px;
+  
+}
+
+#heading{
+  color:#4bb5c3 ;
+  margin-top: 40px;
+
+  
+  
+}
+header{
+  width: 100%;
+  background-color:#fff;
+}
+
+.navbar{
+  display: flex;
+  height: 100px;
+  width: 100%;
+  align-items: center;
+  margin-inline: auto;
+  justify-content: space-between;
+  background-color:#03184A;
+
+}
+
+.navlinks{
+  display: flex;
+  flex: 1;
+  width: 100%;
+  justify-content: space-around;
+  color:#222733;
+}
+.logo{
+  flex: 1;
+  align-self: center;
+  size-adjust: 25px;
+  
+  
+}
+.navlinks a{
+  font-size: 24px;
+  text-decoration: none;
+  color:white
+}
+#paragraph{
+  font-size: 60px;
+}
+
+#heading{
+  font-size: 45px;
+  margin-bottom:10px;
+  text-align: center;
+}
+
+.tagline p{
+  font-size: 40px;
+  text-align: center;
+}
+.tagline{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tagline #button{
+  padding: 15px 40px;
+  font-size: 20px;
+  margin-top: 30px;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  background-color: rgb(75,181,195);
+}
+
+
+#listing{
+  color: #DF843B;
+}
+#btn-register{
+  text-decoration: none;
+  color: #fff;
+}
+
+#image{
+margin-left: 50px;
+}
+
+.about{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  margin-top: 40px;
+  background: #4BB5C3;
+  color: #222733;
+  align-content: center;
+  height: 100%;
+}
+
+/* .footer{
+  background: red;
+  background-image: url("../public/images/memory.jpg");
+  max-height: 1200px;
+  
+  
+} */
+
+
+
+
+
+
+
+  
