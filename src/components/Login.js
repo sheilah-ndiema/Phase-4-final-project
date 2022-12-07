@@ -23,8 +23,8 @@ function LoginForm({ onLogin }) {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <label htmlFor="username">Username</label>
+        <form className='form' onSubmit={handleSubmit}>
+            <label className="inputs-form" htmlFor="username">Username</label>
             <input
                 type="text"
                 id="username"
@@ -32,17 +32,17 @@ function LoginForm({ onLogin }) {
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
             />
-            <label htmlFor="password">Password</label>
+            <label className="inputs-form" htmlFor="password">Password</label>
             <input
                 type="password"
                 id="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
             />
-            <button type="submit">
+            <button id="sign-up" type="submit">
                 {"Login"}
             </button>
-            <p>Or <NavLink className="btn" to='/signup'>create account</NavLink></p>
+            <p>Or <NavLink className="" to='/signup'>create account</NavLink></p>
 
             {errors.map((err) => (
                 <p style={{ color: "red" }} key={err}>{err}</p>
@@ -51,4 +51,8 @@ function LoginForm({ onLogin }) {
     );
 }
 
+
+
 export default LoginForm;
+
+
