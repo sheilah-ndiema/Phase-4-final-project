@@ -3,11 +3,12 @@ import NewBookForm from "./NewBookForm";
 import BookList from "./BookList";
 import Search from "./Search";
 import Login from "./Login";
+import { useNavigate } from "react-router-dom";
 
-function BookPage() {
+function BookPage({ user }) {
     const [books, setBooks] = useState([]);
     const [searchTerm, setSearchTerm] = useState("");
-    const [user, setUser] = useState(null);
+    const navigate = useNavigate()
 
     useEffect(() => {
         // no need to use http://localhost:3000 here
@@ -42,7 +43,7 @@ function BookPage() {
             </main>
         );
     } else {
-        return <Login onLogin={setUser} />;
+        return navigate("/login")
     }
 }
 
