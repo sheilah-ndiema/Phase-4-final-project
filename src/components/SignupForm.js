@@ -24,37 +24,42 @@ function SignupForm({ onLogin }) {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <label htmlFor="username">Username</label>
-            <input
-                type="text"
-                id="username"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
-            />
-            <label htmlFor="password">Password</label>
-            <input
-                type="password"
-                id="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-            />
-            <label htmlFor="passc">Confirm Password</label>
-            <input
-                type="password"
-                id="passc"
-                value={confirmation}
-                onChange={(e) => setConfirmation(e.target.value)}
-            />
-            <button type="submit">
-                Signup
-            </button>
-            <p>Or <NavLink className="" to='/login'>Already have an account</NavLink></p>
+        <div className="form-container">
 
-            {errors.map((err) => (
-                <p style={{ color: "red" }} key={err}>{err}</p>
-            ))}
-        </form>
+            <form className="form" onSubmit={handleSubmit}>
+                <label className="inputs-form" htmlFor="username">Username</label>
+                <input
+                    type="text"
+                    id="username"
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)}
+                />
+                <label className="inputs-form" htmlFor="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                />
+                <label className="inputs-form" htmlFor="passc">Confirm Password</label>
+                <input
+                    type="password"
+                    id="passc"
+                    value={confirmation}
+                    onChange={(e) => setConfirmation(e.target.value)}
+                />
+
+                <button id='sign-up' type="submit"> Sign-up
+
+                </button>
+                <p>Or <NavLink className="btn" to='/login'>Already have an account</NavLink></p>
+
+                {errors.map((err) => (
+                    <p style={{ color: "red" }} key={err}>{err}</p>
+                ))}
+            </form>
+        </div>
+
     );
 }
 
