@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import NewBookForm from "./NewBookForm";
 import BookList from "./BookList";
 import Search from "./Search";
-import Login from "./Login";
 import { useNavigate } from "react-router-dom";
+import Socials from "./Socials";
 
 function BookPage({ user }) {
     const [books, setBooks] = useState([]);
@@ -35,16 +35,19 @@ function BookPage({ user }) {
 
     if (user) {
         return (
-            <main>
-
-                <Search searchTerm={searchTerm} onSearchChange={setSearchTerm} />
-                <NewBookForm onAddBook={handleAddBook} user={user} />
-                <BookList books={displayedBooks} handleDeleteBook={handleDeleteBook} />
-            </main>
+            <div>
+                <main>
+                    <Search searchTerm={searchTerm} onSearchChange={setSearchTerm} />
+                    <NewBookForm onAddBook={handleAddBook} user={user} />
+                    <BookList books={displayedBooks} handleDeleteBook={handleDeleteBook} />
+                </main>
+                <Socials />
+            </div>
         );
     } else {
         return navigate("/login")
     }
+
 }
 
 export default BookPage;
