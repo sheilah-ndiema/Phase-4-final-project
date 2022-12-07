@@ -24,25 +24,20 @@ function Home({ user, setUser }) {
 
                         <h1 style={{ fontWeight: "bolder" }}>All about books!</h1>
                     </div>
-                    <p>Book-it! helps you sell, buy,booksArray and used books for the best price by
+                    <p> <span id="book-it">Book-it</span> helps you sell, and buy used books for the best price by
                         comparing offers from over 30
-                        vendors with a single search.Reading academic material
-                        isn’t always the most exciting activity,
-                        it is sometimes necessary, especially if you are a college student, with an upcoming exam,
-                        or conducting research to complete essays and papers for your course.</p>
+                        vendors with a single search.With one simple search we connect you to various
+                        companies buying used textbooks online. By comparing textbook buyback prices,
+                        we ensure you receive the best prices for your textbooks. Quickly scan tons of books,
+                        at any time from the convenience of your phone
+                        for free!</p>
                     <div>
-
                         <button id="button">
                             {user ? <NavLink className="btn-register" to='/bookpage'>Visit Store</NavLink> : <NavLink className="btn-register" to='/signup'>Register</NavLink>}
                         </button>
-
-
                         {user && <button id="button" onClick={handleLogoutClick}>logout
-
                         </button>}
                     </div>
-
-
                 </div>
 
                 <div id="image">
