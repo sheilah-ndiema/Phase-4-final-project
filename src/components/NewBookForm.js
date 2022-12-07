@@ -21,7 +21,12 @@ function NewBookForm({ onAddBook, user }) {
             }),
         })
             .then((r) => r.json())
-            .then((newBook) => onAddBook(newBook));
+            .then((newBook) => {
+                onAddBook(newBook)
+                setImage("")
+                setName("")
+                setPrice("")
+            });
     }
 
     return (
