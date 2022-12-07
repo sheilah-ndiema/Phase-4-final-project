@@ -1,7 +1,21 @@
 import React from 'react'
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
-function Home() {
+
+
+function Home({ user, setUser }) {
+    const navigate = useNavigate()
+
+    function handleLogoutClick() {
+        fetch("/logout", { method: "DELETE" }).then((r) => {
+            if (r.ok) {
+                setUser(null);
+                navigate("/home")
+            }
+        });
+    }
+
+
     return (
         <div id='home' className='home'>
             <div className="container">
@@ -16,9 +30,19 @@ function Home() {
                         isn’t always the most exciting activity,
                         it is sometimes necessary, especially if you are a college student, with an upcoming exam,
                         or conducting research to complete essays and papers for your course.</p>
-                    <button id="button">
-                        <NavLink id="btn-register" to='/register'>Login</NavLink>
-                    </button>
+                    <div>
+
+                        <button id="button">
+                            {user ? <NavLink className="btn-register" to='/bookpage'>Visit Store</NavLink> : <NavLink className="btn-register" to='/signup'>Register</NavLink>}
+                        </button>
+
+
+                        {user && <button id="button" onClick={handleLogoutClick}>logout
+
+                        </button>}
+                    </div>
+
+
                 </div>
 
                 <div id="image">
