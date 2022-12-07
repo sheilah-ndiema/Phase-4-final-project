@@ -12,7 +12,7 @@ function About() {
                         on our data! We've worked out the way to find and immediately deliver
                         this information to you; your job is to react fast and earn your
                         reselling profit without effort!contact us in any of our social
-                        platforms for more information
+                        platforms for more information.
 
                     </p>
                 </div>
