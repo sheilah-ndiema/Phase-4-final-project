@@ -269,7 +269,7 @@ header{
 #listing{
   color: #DF843B;
 }
-#btn-register{
+.btn-register{
   text-decoration: none;
   color: #fff;
 }
@@ -282,12 +282,14 @@ margin-left: 50px;
   display: flex;
   justify-content:space-between;
   align-items: center;
-  margin-top: 40px;
-  background: #4BB5C3;
+  margin-top: 100px;
+  background: white;
   color: #222733;
   align-content: center;
   height: 100%;
+  text-align: center;
 }
+
 
 /* .footer{
   background: red;
