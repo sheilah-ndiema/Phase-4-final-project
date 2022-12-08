@@ -7,9 +7,6 @@ function NavBar() {
     return (
         <header>
             <div className="navbar" >
-                {/*<div class="logo">
-                    <img src={logo} alt="logo" height="100px" />
-                </div>*/}
                 <div className="navlinks">
                     {/* <a href="/home">Home</a> */}
                     <NavLink to="/home" style={{ fontWeight: "bold" }}>Home</NavLink>

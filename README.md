@@ -35,7 +35,7 @@ cd into the project directory run 'npm install' run 'npm start' and the applicat
 
 Backend
 
-Open [bookitapi-production.up.railway.app](bookitapi-production.up.railway.app) to view the backend
+Open [https://bookitapi-production.up.railway.app/](https://bookitapi-production.up.railway.app/) to view the backend
 
 Front-end
-[https://effortless-lollipop-8249c7.netlify.app](https://effortless-lollipop-8249c7.netlify.app)
+[]()

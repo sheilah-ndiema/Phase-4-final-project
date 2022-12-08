@@ -7,14 +7,13 @@ function Home({ user, setUser }) {
     const navigate = useNavigate()
 
     function handleLogoutClick() {
-        fetch("/logout", { method: "DELETE" }).then((r) => {
+        fetch("https://bookitapi-production.up.railway.app/logout", { method: "DELETE" }).then((r) => {
             if (r.ok) {
                 setUser(null);
                 navigate("/home")
             }
         });
     }
-
 
     return (
         <div id='home' className='home'>
@@ -25,7 +24,7 @@ function Home({ user, setUser }) {
                         <h1 style={{ fontWeight: "bolder" }}>All about books!</h1>
                     </div>
                     <p> <span id="book-it">Book-it</span> helps you sell, and buy used books for the best price by
-                        comparing offers from over 30
+                        comparing offers from different
                         vendors with a single search.With one simple search we connect you to various
                         companies buying used textbooks online. By comparing textbook buyback prices,
                         we ensure you receive the best prices for your textbooks. Quickly scan tons of books,

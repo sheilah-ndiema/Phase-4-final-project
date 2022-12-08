@@ -17,7 +17,7 @@ function App() {
         return navigate("/bookPage")
     }
     useEffect(() => {
-        fetch("/me").then(res => {
+        fetch("https://bookitapi-production.up.railway.app/me").then(res => {
             if (res.ok) {
                 res.json().then(data => setUser(data))
             }

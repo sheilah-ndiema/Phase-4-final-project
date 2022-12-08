@@ -7,7 +7,7 @@ function NewBookForm({ onAddBook, user }) {
 
     function handleSubmit(e) {
         e.preventDefault();
-        fetch("/books", {
+        fetch("https://bookitapi-production.up.railway.app/books", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

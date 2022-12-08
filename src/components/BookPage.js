@@ -12,7 +12,7 @@ function BookPage({ user }) {
 
     useEffect(() => {
         // no need to use http://localhost:3000 here
-        fetch("/books")
+        fetch("https://bookitapi-production.up.railway.app/books")
             .then((r) => r.json())
             .then((booksArray) => {
                 setBooks(booksArray);
@@ -31,7 +31,6 @@ function BookPage({ user }) {
     const displayedBooks = books.filter((book) => {
         return book.name.toLowerCase().includes(searchTerm.toLowerCase());
     });
-
 
     if (user) {
         return (

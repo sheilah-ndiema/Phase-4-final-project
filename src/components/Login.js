@@ -7,7 +7,7 @@ function LoginForm({ onLogin }) {
     const [errors, setErrors] = useState([]);
     function handleSubmit(e) {
         e.preventDefault();
-        fetch("/login", {
+        fetch("https://bookitapi-production.up.railway.app/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

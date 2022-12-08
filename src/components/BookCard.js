@@ -10,7 +10,7 @@ function BookCard({ book, handleDeleteBook }) {
     }
 
     function handleDelete() {
-        fetch(`http://localhost:4000/books/${book.id}`, {
+        fetch(`https://bookitapi-production.up.railway.app//books${book.id}`, {
             method: "DELETE",
         }).then(() => handleDeleteBook(book.id))
     }

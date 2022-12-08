@@ -8,7 +8,7 @@ function SignupForm({ onLogin }) {
     const [errors, setErrors] = useState([]);
     function handleSubmit(e) {
         e.preventDefault();
-        fetch("/signup", {
+        fetch("https://bookitapi-production.up.railway.app/signup", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
