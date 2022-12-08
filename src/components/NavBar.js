@@ -16,7 +16,7 @@ function NavBar() {
                     {/* <a href="/about">About us</a> */}
                     <NavLink to='/about' style={{ fontWeight: "bold" }}>About</NavLink>
                     {/* <a href="/category">Category</a> */}
-                    <NavLink to='/bookPage' style={{ fontWeight: "bold" }}>Books to Buy/sell</NavLink>
+                    <NavLink to='/bookpage' style={{ fontWeight: "bold" }}>Books to Buy/sell</NavLink>
                 </div>
             </div>
         </header>
