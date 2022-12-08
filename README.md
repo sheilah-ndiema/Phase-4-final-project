@@ -31,7 +31,7 @@ cd into the project directory run 'npm install' run 'npm start' and the applicat
 
 #### Users will be able to add books and delete books once they are logged in
 
-## links
+## Deployed links
 
 Backend
 
@@ -40,3 +40,7 @@ Open [https://bookitapi-production.up.railway.app/books](https://bookitapi-produ
 Front-end
 
 Open [https://dashing-pastelito-844a04.netlify.app](https://dashing-pastelito-844a04.netlify.app)
+
+## Back-end github link
+
+[https://github.com/sheilah-ndiema/Phase-4-final-Project-Backend](https://github.com/sheilah-ndiema/Phase-4-final-Project-Backend)
