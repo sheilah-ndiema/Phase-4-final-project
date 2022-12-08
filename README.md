@@ -10,6 +10,7 @@ ruby "2.7.4"
 
 ## Installation
 
+To open the project locally:
 Fork and clone both the front-end and back-end repositories
 
 ## Backend
@@ -38,4 +39,5 @@ Backend
 Open [https://bookitapi-production.up.railway.app/](https://bookitapi-production.up.railway.app/) to view the backend
 
 Front-end
-[]()
+
+[https://dashing-pastelito-844a04.netlify.app](https://dashing-pastelito-844a04.netlify.app)
