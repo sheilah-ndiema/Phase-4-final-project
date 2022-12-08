@@ -33,7 +33,7 @@ function App() {
                 <Route exact path='/signup' element={<SignupForm onLogin={onLogin} />} />
                 <Route exact path='/login' element={<LoginForm onLogin={onLogin} />} />
                 <Route exact path='/about' element={<About />} />
-                <Route exact path='/bookPage' element={<BookPage user={user} />} />
+                <Route exact path='/bookpage' element={<BookPage user={user} />} />
             </Routes>
         </div >
     );
